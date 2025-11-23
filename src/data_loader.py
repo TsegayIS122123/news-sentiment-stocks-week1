@@ -1,5 +1,5 @@
 """
-Data loading and preprocessing utilities.
+Data loading utilities
 """
 
 import pandas as pd
@@ -17,6 +17,3 @@ def load_stock_data(symbol, data_dir='../data/Data/'):
     df = pd.read_csv(filepath)
     df['Date'] = pd.to_datetime(df['Date'])
     return df
-
-if __name__ == "__main__":
-    print("Data loader module ready")
